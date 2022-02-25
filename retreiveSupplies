@@ -1,0 +1,55 @@
+//2015 Challenge 9 - 100 points
+#include <linkbot.h>
+
+CLinkbotI robot;
+int node;
+
+float radius = 1.75;
+float trackwidth = 3.69;
+
+printf("Enter the node the hacky is in. \n");
+scanf("%i", &node);
+if (node == 1){
+    robot.driveDistance(-4, radius);
+    robot.turnRight(90, radius, trackwidth);
+    robot.driveDistance(-3, radius);
+    robot.turnLeft(90, radius, trackwidth);
+    robot.driveDistance(-30, radius);
+    robot.turnRight(90, radius, trackwidth);
+    robot.driveDistance(-8, radius);
+}
+if (node == 2){
+    robot.driveDistance(-43, radius);
+    robot.turnRight(90, radius, trackwidth);
+    robot.driveDistance(-6, radius);
+    robot.turnRight(50, radius, trackwidth);
+    robot.driveDistance(-8, radius);
+}
+if (node == 3){
+    robot.driveDistance(-48, radius);
+    robot.turnRight(90, radius, trackwidth);
+    robot.driveDistance(-22, radius);
+    robot.turnRight(120, radius, trackwidth);
+    robot.driveDistance(-12, radius);
+}
+if (node == 4){
+    robot.driveDistance(-22, radius);
+    robot.turnRight(90, radius, trackwidth);
+    robot.driveDistance(-23, radius);
+    robot.turnLeft(90, radius, trackwidth);
+    robot.driveDistance(-12.5, radius);
+    robot.turnLeft(90, radius, trackwidth);
+    robot.driveDistance(-7.3, radius);
+}
+if (node == 5){
+    robot.driveDistance(-21, radius);
+    robot.turnRight(90, radius, trackwidth);
+    robot.driveDistance(-22, radius);
+    robot.turnRight(237, radius, trackwidth);
+    robot.driveDistance(-12.5, radius);
+}
+if (node == 6){
+    robot.driveDistance(-13, radius);
+    robot.turnRight(33.5, radius, trackwidth);
+    robot.driveDistance(-21.5, radius);
+}
